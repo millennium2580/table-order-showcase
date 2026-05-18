@@ -1,0 +1,27 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+@font-face {
+    font-family: 'Taenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YiSunShinDotumB';
+    src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Asan/YiSunShinDotumB.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.title-font {
+    font-family: 'Taenada', sans-serif;
+}
+
+.subtitle-font {
+    font-family: 'YiSunShinDotumB', sans-serif;
+}
+
+.body-font {
+    font-family: 'Pretendard Variable', 'Pretendard', 'Noto Sans KR', sans-serif;
+}
