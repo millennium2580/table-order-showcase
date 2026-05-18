@@ -1,0 +1,94 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+/* ———————————— reset.css ———————————— */
+
+body, p, ul, ol, li, dl, dt, dd, button { margin: 0; padding: 0; }
+ul, ol, li { list-style: none; }
+button {
+    border: 0 none;
+    padding: 0;
+    text-align: left;
+    outline: none;
+    background-color: transparent;
+}
+img { width: 100%; height: 100%; vertical-align: top;}
+a { text-decoration: none;}
+
+
+/* ———————————— base.css ———————————— */
+
+/* ———————————— 폰트설정 ———————————— */
+
+    /* 폰트 기본설정 */
+        body, button {
+            font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            font-size: 16px; 
+            font-weight: 400;
+            color: #383230; }
+        body {
+            width: 1280px;
+            background-color: #E2E2E2;}
+        button {
+            height: 60px;
+            border-radius: 10px;}
+    /* 메뉴카드상품명 */
+        .manu-name {
+            font-size: 20px; 
+            font-weight: 600; }
+    /* 매장명,테이블번호 */
+        .header-brand {
+            font-size: 32px; 
+            font-weight: 700;}
+    /* 카테고리명, 팝업타이틀 */
+        .title-section {
+            font-size: 24px; 
+            font-weight: 600; }
+    /* 메뉴 카드 상품명 */
+        .content-menu-name {
+            font-size: 20px; 
+            font-weight: 600; }
+    /* 상품가격 */
+        .content-price {
+            font-size: 18px; 
+            font-weight: 700; }
+    /* 주문총금액 */
+        .total-price {
+            font-size: 28px; 
+            font-weight: 700; }
+    /* 원산지,알레르기,품절안내 */
+        .caption-subInfo {
+        font-size: 14px; }
+        
+/*  */
+
+/* 스크롤바 디자인 */
+.scrollbar { 
+  height: calc(100% - 56px);
+  overflow-y: scroll;
+}
+
+/* 스크롤바의 폭 너비 */
+.scrollbar::-webkit-scrollbar {
+    width: 10px;  
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #B1A295; /* 스크롤바 색상 */
+    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: #D4CAC1;  /*스크롤바 뒷 배경 색상*/
+    border-radius: 10px;
+}
+/* 스크롤바 트랙 위쪽 여백 공간 주기 위해서 */
+.scrollbar::-webkit-scrollbar-button:vertical:start:decrement {
+    display: block;
+    height: 25px;
+}
+
+/* 만일 스크롤바 트랙 아래쪽도 여백 공간을 주고 싶다면 ... */
+.scrollbar::-webkit-scrollbar-button:vertical:end:decrement {
+    display: block;
+    width: 25px;
+}

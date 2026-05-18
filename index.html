@@ -1,58 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>테이블오더 소개페이지</title>
+    <title>테이블오더</title>
+    <!-- 프리탠다드 CDN -->
+    <link rel="stylesheet" href="styles/common.css"> 
+    <link rel="stylesheet" href="styles/layout.css"> 
+    <script src="scripts/data.js" defer></script> 
+    <script src="scripts/main.js" defer></script> 
 </head>
+
 <body>
-    <main class="page">
-        <!-- 표지 / 인트로 -->
-        <section class="hero-section">
-            <h1 class="title-font">통합 주문 시스템</h1>
-            <ul class="">
-                <li>카페 테이블오더</li>
-                <li>POS 관리자 화면</li>
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="table-num header-brand">Table. 05</div>
+            <ul class="tab-main">
+                <li data-main="new"><button class="title-section">시즌메뉴</button></li>
+                <li data-main="coffee"><button class="title-section">커피</button></li>
+                <li data-main="noncoffee"><button class="title-section">논커피</button></li>
+                <li data-main="blended"><button class="title-section">블랜디드</button></li>
+                <li data-main="fizzio"><button class="title-section">피지오</button></li>
+                <li data-main="tea"><button class="title-section">티</button></li>
+                <li data-main="dessert"><button class="title-section">디저트</button></li>
             </ul>
-        </section>
+            
+            <div class="order-history"><button class="title-section">주문내역</button></div>
+            <div class="call-staff"><button class="title-section">직원호출</button></div>
+        </header>
 
-        <!-- 테이블오더 테스트 -->
-        <section class="preview-section">
-            <h2>설계한 주문 흐름과 로직을 직접 경험해보세요.</h2>
-        </section>
-
-        <!-- 주문 흐름별 코드 소개 -->
-        <section class="flow-section">
-            <div class="inner">
-                <h2 class="blind"> 주문 흐름에 맞춰 구현한 기능들 </h2>
-                <article class="item">
-                    <h3>메뉴 데이터 설계와 화면 구성</h3>
-                </article>
-                <article class="item">
-                    <h3>서브탭과 연결되는 슬라이드 탐색</h3>
-                </article>
-                <article class="item">
-                    <h3>옵션 데이터를 선택 구조로 재구성</h3>
-                </article>
-                <article class="item">
-                    <h3>옵션 조합으로 구성되는 장바구니</h3>
-                </article>
-                <article class="item">
-                    <h3>주문완료 & 초기화</h3>
-                </article>
+        <section id="products">
+            <ul class="tab-sub"></ul> <!-- 서브카테고리 -->
+            <div class="products scrollbar">
+                <div class="product-list"></div> <!-- 상품리스트 -->
             </div>
         </section>
 
-        <!-- 관리자 POS 디자인 -->
-        <section class="pos-section">
-            <h2>관리자 POS</h2>
+        <section id="options">
+            <div class="inbox">
+                <div class="box-top">
+                    <span class="title-section">메뉴 상세정보</span>
+                    <button class="close-btn"><img src="images/icon/func/close.png" alt="전체메뉴"></button>
+                </div>
+                <div class="box-mid">
+                    <div class="product-info"></div> <!-- 상품 기본 영역 -->
+                    <div class="option-list scrollbar">
+                        <div class="opt-ly">
+                            <div class="temper-been opt-box"></div>
+                            <div class="syrup-iceb opt-box"></div>
+                            <div class="size-shot opt-box"></div>
+                            <div class="whipping-drizzle opt-box"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="box-btm">
+                    <div class="opt-box">
+                        <div class="quantity">
+                            <span class="num-txt title-section">수량</span>
+                            <div class="opt-num">
+                                <button class="minus title-section" data-btn="minus"><img src="images/icon/func/minus.png" alt="빼기"></button>
+                                <span class="count manu-name">1</span>
+                                <button class="plus title-section" data-btn="plus"><img src="images/icon/func/plus.png" alt="더하기"></button>
+                            </div>
+                        </div>
+                        <div class="line">l</div>
+                        <p class="price title-section">
+                            <span class="opt-txt">총 금액</span>
+                            <span class="opt-price"></span>원
+                        </p>
+                    </div>
+                    <button class="cart-add title-section">장바구니</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cart">
+            <div class="cart-inbox">
+                <div class="cart-title header-brand">장바구니</div>
+                <ul class="cart-list scrollbar"></ul>
+                <div class="order-area">
+                    <p>
+                        <span class="title-section">총금액</span>
+                        <strong class="order-price total-price"></strong> <!-- reset: strong{ font-weight: normal; } -->
+                    </p>
+                    <div class="order-btn">
+                        <button class="title-section">주문하기</button>
+                    </div>
+                </div>
+                <div class="cart-close-btn"></div>
+            </div>
         </section>
 
-        <!-- 프로젝트 회고 -->
-        <section class="review-section">
-            <h2>성장의 기록</h2>
-        </section>
-    </main>
-
+        <div class="msg-area">
+        <p class="inner">메세지가 보임</p>
+        
+    </div>
 </body>
 </html>
