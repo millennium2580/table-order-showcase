@@ -1,0 +1,75 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+@font-face {
+    font-family: 'Taenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YiSunShinDotumB';
+    src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Asan/YiSunShinDotumB.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Reset style */ /* 기본값 초기화 - 여기서만 태그 선택자 허용 */
+* { box-sizing: border-box; word-break: keep-all;}
+body, h1, h2, h3, h4, p, ul, ol, li, button, a, dl, dd, fieldset { margin: 0; padding: 0; }
+h1, h2, h3, h4 { font-size: inherit; }
+ul, ol, li { list-style: none; }
+a { text-decoration: none; color: inherit; }
+button { border: 0; background: transparent; cursor: pointer; }
+img { vertical-align: top; max-width: 100%; }
+input, button, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    background: none;
+    font-family: inherit; /* 필수: 부모 폰트 상속 */
+}
+button, select, textarea {appearance: none; /* 필수: 기기별 기본 스타일 제거 */}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+#aside { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+
+/* common.css 에 추가해주세요 */
+/* reset */
+table { 
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0 none;
+    width: 100%;
+}
+
+th, td {
+    border: 0 none;
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+
+/* 폰트 */
+.title-font {
+    font-family: 'Taenada', sans-serif;
+}
+
+.subtitle-font {
+    font-family: 'YiSunShinDotumB', sans-serif;
+}
+
+.body-font {
+    font-family: 'Pretendard Variable', 'Pretendard', 'Noto Sans KR', sans-serif;
+}
+
+
+/* hero-section */
+.hero-section {
+    padding: 50px 20px 0 10px;
+}
+
